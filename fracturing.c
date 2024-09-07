@@ -27,8 +27,8 @@ double calculatePerimeter()
     double perimeter_side = 0;
     double perimeter_total = 0;
     perimeter_side = calculateDistance();
-    peremeter_total = perimeter_side * 4;
-    printf("The Perimeter is: %.2f\n", peremeter_total);
+    perimeter_total = perimeter_side * 4;
+    printf("The Perimeter is: %.2f\n", perimeter_total);
 }
 int main(int argc, char **argv)
 {
