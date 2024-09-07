@@ -3,6 +3,7 @@
 // Author: Gavin Zieglar
 // Class: COP 3223, Professor Parra
 // //********************************************************
+
 #include <stdio.h>
 #include <math.h>
 #define PI 3.14159265
@@ -46,9 +47,11 @@ double calculatePerimeter()
     printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
     printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
     distance = distance_helper(x1, y1, x2, y2);
+
     radius = distance/2;
     perimeter = 2 * PI * radius;
     printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+
     return 3;
 }
 double calculateArea()
@@ -65,10 +68,12 @@ double calculateArea()
     scanf("%d %d", &x2, &y2);
     printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
     printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
+
     distance = distance_helper(x1, y1, x2, y2);
     radius = distance/2;
     area = (PI * radius * radius);
     printf("The area of the city encompassed by your request is %.2f\n", area);
+
     return 2;
 }
 double calculateWidth()
@@ -83,8 +88,10 @@ double calculateWidth()
     scanf("%d %d", &x2, &y2);
     printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
     printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
+
     width = distance_helper(x1, y1, x2, y2);
     printf("The width of the city encompassed by your request is %.2f\n", width);
+
     return 1;
 }
 double calculateHeight()
@@ -99,8 +106,10 @@ double calculateHeight()
     scanf("%d %d", &x2, &y2);
     printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
     printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
+
     height = distance_helper(x1, y1, x2, y2);
     printf("The height of the city encompassed by your request is %.2f\n", height);
+    
     return 1;
 }   
 int main(int argc, char **argv)
