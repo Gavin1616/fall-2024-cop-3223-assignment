@@ -13,12 +13,14 @@ double calculateDistance()
         int y2;
         double distance = 0;
         
-        printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
         scanf("%d %d", &x1, &y1);
         scanf("%d %d", &x2, &y2);
+
+        printf("Point #1 entered: x1 = %d; y1 = %d\n",x1, y1);
         printf("Point #2 entered: x2= %d: y2= %d\n", x2, y2);
 
         distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        printf("The distance between the two points is %.2f\n", distance);
 
         return distance;
     }
