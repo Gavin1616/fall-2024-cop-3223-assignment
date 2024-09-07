@@ -51,6 +51,7 @@ double calculatePerimeter()
     perimeter = 2 * x_distance + 2 * y_distance;
 
     printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
+    
 
 }
 double calculateArea()
