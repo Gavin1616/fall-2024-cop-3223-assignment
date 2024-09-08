@@ -37,7 +37,6 @@ double calculateDistance()
 
     return distance;
 }
-
 // Gets distance, divide by two, and then calculates curcumfrence of circle 
 double calculatePerimeter()
 {
